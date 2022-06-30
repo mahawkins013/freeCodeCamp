@@ -1,0 +1,152 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Coding Career Survey Form</title>
+      <link rel="stylesheet" type="css/text" href="styles.css">
+      <meta charset="UTF-8">
+  <meta name="description" content="Coding Career Survey Form">
+  <meta name="keywords" content="HTML, CSS, Coding, Career">
+  <meta name="author" content="Madison Hawkins">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+      <body>
+        <h1 id="title">Coding Career Survey Form</h1>
+      <p id="description"> Thank you for helping us collect this information! </p>
+      <form id="survey-form">
+     <fieldset>
+       <label id="name-label" name="name-label" class="request"> First and Last Name: <input type="text" id="name" placeholder="June Doe" required></input></label>
+       <label id="email-label" name="email-label" for="email" class="request"> Email Address: <input type="email" id="email"  placeholder="email@blank.com" required></input></label>
+       <label id="number-label" name="number-label" class="request"> Age: <input type="number" id="number" min="18" max="105" placeholder="Number" required ></input></label>
+      
+         <label class="question"> What is your current occupation?
+         <select id="dropdown">
+           <option value=""> (select one) </label>
+           <option value="1"> Architect </label>
+           <option value="2"> Artist </option>
+           <option value="3"> Business management or administration </option>
+           <option value="4"> Communications </option>
+           <option value="5"> Community/Social Services </option>
+           <option value="6"> Education </option>
+           <option value="7"> Farming/Fishing/Forestry </option>
+           <option value="8"> Hospitality </option>
+           <option value="9"> Government </option>
+           <option value="10"> Installation and Repair Services</option>
+           <option value="11"> Health and Human Services </option>
+           <option value="12"> Law and Public Policy </option>
+           <option value="13"> Sales </option>
+           <option value="14"> Other </option>
+           </select>
+      
+       
+         <label class="question">Which type of coding job are you looking for? </label>
+         <label><input type="radio" name="coding-job" value="Computer-Programmer" class="inline"> Computer Programmer </input></label>
+        <label><input type="radio" name="coding-job" value="Web-Developer" class="inline"> Web Developer </input></label>
+         <label><input type="radio" name="coding-job" value="Front-End-Developer" class="inline"> Front-End Developer </input></label>
+         <label><input type="radio" name="coding-job" value="Back-End-Developer" class="inline"> Back-End Developer </input></label>
+         <label><input type="radio" name="coding-job" value="Comp-Systems-Analyst-Engineer" class="inline"> Computer Systems Analyst/Engineer </input></label>
+         <label><input type="radio" name="coding-job" value="Cybersecurity-Anaylyst" class="inline"> Cybersecurity Analyst </input></label>
+         <label><input type="radio" name="coding-job" value="AI-Programmer" class="inline"> AI Programmer </input></label>
+
+ <div>        
+ <label class="question"> What are you looking for out of a coding-based career? </label>
+  <input type="checkbox" value="Money" id="Money" class="inline"> <label for="Money"> More Money </label></input>
+  <input type="checkbox" value="work-life" id="work-life" class="inline"> <label for="work-life"> Better Work-Life Balance </label></input>
+<input type="checkbox" value="flexibility" id="flexibility" class="inline"> <label for="flexibility">More schedule flexibility </label> </input>
+<input type="checkbox" value="mobility" id="mobility" class="inline"><label for="mobility"> Better Upward Mobility </input></label>
+<input type="checkbox" value="fulfilling" id="fulfilling" class="inline"><label for="fulfilling"> More fulfilling career </input></label>
+   </div>
+
+  <label class="request">Please provide additional reasons you want to begin a coding-based career:
+    <textarea name="reasons" rows="6" cols="40" placeholder="I want to begin a new coding-based career because..."></textarea>
+    </label>
+
+    <input type="submit" value="Submit my form!" id="submit"></input>
+           </fieldset>
+       </form>
+    </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+form {
+  width: 500px;
+  margin: 50 auto;
+}
+
+fieldset {
+  background-color: transparent;
+  background-color: #364a61;
+  border: none;
+  border-radius: 25px;
+}
+
+body {
+  font-family: Courier New;
+  color: #ffffff; 
+  background-image: linear-gradient(#456383, black);
+}
+
+h1, p {
+  text-align: center;
+}
+
+input, label {
+  display: block;
+  margin: 0 0.5em 0 0;
+  font-family: Courier New; 
+}
+
+.inline {
+  display: block;
+  width: unset;
+  float: left;
+}
+/* need to fix the inline text to be on same line*/
+
+textarea, input {
+  display: block;
+  background-color: #aa6839;
+  color: white;
+}
+
+textarea {
+  margin: 20px 73px;
+  text-align: left;
+  font-family: Courier New;
+  width: 70%;
+}
+
+::placeholder {
+  color: white;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 70%;
+  height: 2em;
+  font-size: 1em;
+  margin: 2em auto;
+  color: white;
+  background-color: #aa6839;
+  border-color: white; 
+}
+
+.request, .question  {
+  margin: 1em 1em 0 0;
+}
+
+select {
+  background-color: #aa6839;
+  color: #ffffff;
+}
+
+input[type="number"] {
+  width: 75px;
+}
+
+** end of undefined **
+
